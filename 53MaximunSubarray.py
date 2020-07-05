@@ -14,6 +14,10 @@ class Solution:
         return maxi
 
 # Dynamic programming O(n) O(1)
+"""
+loc_max[i]  is continuous max end with i  which means i must be included
+so loc_max[i] = max(loc_max[i]+nums[i], nums[i]), either start a new max or add with previous
+"""
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         loc_max = glob_max = nums[0]
