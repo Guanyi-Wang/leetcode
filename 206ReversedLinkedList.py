@@ -20,7 +20,7 @@ class Solution:
         return res.next
 
 
-# Dynamic Programming
+# iterative way
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
@@ -37,7 +37,7 @@ class Solution:
         return curr
 
 
-# Better DP but change the head
+# Better iterative but change the head
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         prev = None
