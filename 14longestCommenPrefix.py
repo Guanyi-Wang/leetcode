@@ -10,4 +10,14 @@ def longestCommonPrefix(strs: [str]) -> str:
                 return res
         res += strs[0][i]
     return res
-print(longestCommonPrefix(["aa","a"]))
+
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        if not strs:
+            return ""
+        shortest = min(strs, key=len)
+        for i in range(len(shortest)):
+            for s in strs:
+                if shortest[i]!=s[i]:
+                    return shortest[:i]
+        return shortest
