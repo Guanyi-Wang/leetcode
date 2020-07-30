@@ -1,6 +1,5 @@
-"""
-Find all O on the edge. Find all O connected to them (BFS)and mark them as A. Go through matrix again and mark all O(O not connected to the edge) to X and A to O.
-"""
+"""Find all O on the edge. Find all O connected to them (BFS)and mark them as A. Go through matrix again and mark all
+O(O not connected to the edge) to X and A to O. """
 from  typing import List
 import collections
 
